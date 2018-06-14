@@ -195,14 +195,40 @@ button{
 
     @media screen and (max-width: 980px) {
         body {
-          background-color: lightblue;
+          background-color: whitesmoke;
         }
         .col-6 {
           /* Box-model */
-          width: 100%;
+          width: 50%;
           /* padding: 20px; */
         }
-      
+        nav{
+            float: right;
+            margin: 36px;
+            text-align: center;
+            padding-right: 10px;
+        }
+        nav ul li{
+            display: inline-block;
+        }
+        nav ul li a {
+            color: #333;
+            font-size: 18px;
+            padding: 5px 5px;
+            /* border-right: 2px solid #4aaaa5; */
+            text-decoration: none;   
+        }
+        nav ul li:last-child a{
+            border-right:none;
+            padding:none;
+        }
+        nav a:hover{
+            background: #4aaaa5;
+        }
+        form label{
+            font-size: 18px;
+            display:block;
+        }
       }
       
       /* Additional Screen Sizes */
@@ -210,33 +236,68 @@ button{
       /* Width at 320px and below */
       @media screen and (max-width: 768px) {
         body {
-          background-color: orange;
+          background-color:white;
       
+        }
+        .col-6 {
+            /* Box-model */
+            width: 50%;
+            /* padding: 20px; */
+          }
+          nav{
+            float: right;
+            margin: 36px;
+            text-align: center;
+            padding-right: 5px;
+        }
+        nav ul li{
+            display: inline-block;
+        }
+        nav ul li a {
+            color: #333;
+            font-size: 18px;
+            padding: 5px 15px;
+            /* border-right: 2px solid #4aaaa5; */
+            text-decoration: none;   
+        }
+        nav ul li:last-child a{
+            border-right:none;
+            padding:none;
+        }
+        nav a:hover{
+            background: #4aaaa5;
+        }
+        form label{
+            font-size: 18px;
+            display:block;
+        }
+        .content{
+            overflow: auto;
+            padding:20px;
+            margin-left: auto;
+            margin-right:auto;
+        }
+        .col-8{
+            column-width: 100%;
+            display: block;
+            padding:10px;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+            float:center;
+            color:#777777;
+            background-color:white;
+            overflow:auto;
         }
         .heading1{
-            padding-left: 15%
+            padding-left: 1%
         }
       
-        .wrapper {
-          /* Box-model */
-          width: 100%;
-          padding: 20px;
-        }
-      
-        #main-content,
-        #sidebar {
-          width: 100%;
-        }
-      
-        #sidebar {
-          margin-top: 40px;
-        }
       }
       
       /* Width at 168px and below */
       @media screen and (max-width: 640px) {
         body {
-          background-color: lightpink;
+          background-color: whitesmoke;
         }
 .col-1 {width: 100%;}
 .col-2 {width: 100%;}
@@ -250,6 +311,16 @@ button{
 .col-10 {width: 100%;}
 .col-11 {width: 100%;}
 .col-12 {width: 100%;}
+
+.heading1{
+    padding-left: 30px;
+    width:100%;
+}
+.col-6 {
+    /* Box-model */
+    width: 100%;
+    /* padding: 20px; */
+  }
         .content{
             column-width: 100%;
             margin:5px;
@@ -259,8 +330,30 @@ button{
             background:rgba(0, 0, 0, .5 );
             margin-bottom:20px;
             margin-top:20px;
-            width:45%;
+            width:100%;
             float: left;
             height:250px;
+        }
+        nav{
+            float: left;
+            margin: 36px;
+            text-align: center;
+            padding-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+        }
+        nav ul li a {
+            color: #333;
+            font-size: 18px;
+            /* border-right: 2px solid #4aaaa5; */
+            text-decoration: none;   
+        }
+        nav ul li:last-child a{
+            border-right:none;
+            padding:none;
+        }
+        nav a:hover{
+            background: #4aaaa5;
         }
       }
